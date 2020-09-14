@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKiemTra = +prompt("nhập điểm kiểm tra");
+    let diemGiuaKy = +prompt("nhập điểm thi giữa kỳ");
+    let diemCuoiKy = +prompt("nhập điểm thi cuối kỳ");
+    let toTal = (diemKiemTra + (diemGiuaKy * 2) + (diemCuoiKy * 3)) / 6
+    if (toTal < 5) {
+        document.write('Học lực Yếu')
+    } else if (toTal < 7) {
+        document.write('Học lực Trung Bình')
+    } else if (toTal < 9) {
+        document.write('Học lực Khá')
+    } else {
+        document.write('Học lực Giỏi')
+    }
+</script>
+</body>
+</html>
